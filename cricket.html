@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>cricket game</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick="
+  let Yourchoice = 'You have chose bat';
+  let randomnumber = Math.random()*3;
+  let computerchoice
+  if(randomnumber>0 && randomnumber<=1) {
+  computerchoice = 'Bat';
+  } else if(randomnumber>1 && randomnumber<=2) {
+  computerchoice = 'Ball';
+  }      else{
+    computerchoice = 'Stump';
+  }
+  let comp;
+  if (computerchoice === 'Bat'){
+    comp = 'Its a Tie!';
+  } else if (computerchoice === 'Ball'){
+    comp = 'You won!';
+  } else if (computerchoice === 'Stump'){
+    comp = 'You loose!';
+  }
+  alert(`Computer choice is: ${computerchoice} and ${comp}`)
+  ">Bat</button>
+  <button onclick="
+  Yourchoice = 'You have chose ball';
+  randomnumber = Math.random()*3;
+  let computerchoice2
+  if(randomnumber>0 && randomnumber<=1) {
+  computerchoice2 = 'Bat';
+  } else if(randomnumber>1 && randomnumber<=2) {
+  computerchoice2 = 'Ball';
+  }      else{
+    computerchoice2 = 'Stump';
+  }
+  let comp2;
+  if (computerchoice2 === 'Bat'){
+    comp2 = 'You loose!';
+  } else if (computerchoice2 === 'Ball'){
+    comp2 = 'Its a tie!';
+  } else if (computerchoice2 === 'Stump'){
+    comp2 = 'You won!';
+  }
+  alert(`Computer choice is: ${computerchoice2} and ${comp2}`)
+  ">Ball</button>
+  <button onclick="
+  Yourchoice = 'You have chose stump';
+  randomnumber = Math.random()*3;
+  let computerchoice3
+  if(randomnumber>0 && randomnumber<=1) {
+  computerchoice3 = 'Bat';
+  } else if(randomnumber>1 && randomnumber<=2) {
+  computerchoice3 = 'Ball';
+  }      else{
+    computerchoice3 = 'Stump';
+  }
+  let comp3;
+  if (computerchoice3 === 'Bat'){
+    computerchoice3 = 'You won!';
+  } else if (computerchoice3 === 'Ball'){
+    comp3 = 'You loose!';
+  } else if (computerchoice3 === 'Stump'){
+    comp3 = 'Its a tie!';
+  }
+  alert(`Computer choice is: ${computerchoice3} and ${comp3}`)
+  ">Stump</button>
+<script>
+
+</script>
+</body>
+</html>
